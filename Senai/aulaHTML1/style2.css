@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    background-color: #201b2c;
+}
+.pointer{
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    color: #77ffc0;
+    margin-top: 10vw;
+}
+.secret{
+    justify-content: center;
+    display: flex;
+    margin-top: 10vw;
+    border-top: 1200px;
+}
