@@ -14,11 +14,11 @@ body{
     display: flex;
     color: #77ffc0;
     margin-top: 10vw;
-    
+    font-size: 100px;
 }
 .secret{
     justify-content: center;
     display: flex;
-    margin-top: 10vw;
-    border: 1200px;
+    margin-top: 400px;
+    opacity: 10%;
 }

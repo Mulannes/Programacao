@@ -18,6 +18,8 @@ body{
 .secret{
     justify-content: center;
     display: flex;
-    margin-top: 10vw;
-    border-top: 1200px;
+}
+.esa{
+    display: flex;
+    margin-left: 550px;
 }
