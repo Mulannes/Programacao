@@ -22,3 +22,23 @@ body{
     margin-top: 400px;
     opacity: 10%;
 }
+.header{
+    padding: 19px 94px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+.menu ul{
+    list-style: none;
+    padding-left: 25vw;
+}
+.menu ul li{
+    display: inline;
+    margin-right: 80px;
+}
