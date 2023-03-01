@@ -5,3 +5,70 @@
     box-sizing: border-box;
     font-family: "Poppins";
 }
+body{
+    background-color: #201b2c;
+}
+div{
+    padding-left: 0;
+    margin: 10px;
+    display: inline-block;
+    justify-content: center;
+    border: 10px;
+}
+.title1{
+    display: flex;
+    justify-content: center;
+    color: #77ffc0;
+    
+}
+.capital{
+    color:#77ffc0;
+    display: flex;
+    background-color: #312844;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+}
+.cities{
+    color: #77ffc0;
+    display: flex;
+    justify-content: center;
+    background-color: #312844;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5px;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+}
+p{
+    color: #ffffff;
+    display: block;
+    margin-top: 5px;
+} 
+.section{
+    margin: 75px;
+    text-align: center;
+}
+.div1{
+    text-align: center;
+    display: block;
+    color: #77ffc0;
+}
+.div1 h1{
+    background-color: #77ffc0;
+    color: #201b2c;
+    border: 2px solid #425e51;
+    margin-top: 5px;
+    box-shadow: 5px 5px 10px black;
+}
+.div1 p{
+    background: #312844;
+    box-shadow: 5px 5px 10px black;
+    height: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
