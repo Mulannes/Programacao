@@ -8,21 +8,6 @@
 body{
     background-color: #201b2c;
 }
-.pointer{
-    cursor: pointer;
-    justify-content: center;
-    display: flex;
-    color: #77ffc0;
-    margin-top: 10vw;
-}
-.secret{
-    justify-content: center;
-    display: flex;
-}
-.esa{
-    display: flex;
-    margin-left: 550px;
-}
 .header{
     padding: 19px 94px;
     width: 100vw;
@@ -55,4 +40,13 @@ body{
 .menu ul li a:hover{
     text-decoration: underline;
     color: blue;
+}
+.imagens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.imagens img{
+    width: 50vw;
 }
