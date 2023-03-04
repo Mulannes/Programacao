@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    background-color: #201b2c;
+}
+
+.wallpaper{
+    background-image: linear-gradient(to bottom,rgba(82, 66, 118, 0.7), rgba(32, 27, 44, 1));
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+}
+
+.pointer{
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    color: #77ffc0;
+    margin-top: 40px;
+}
+
+.secret{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 40px;
+}
+
+.secret::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    background: #fff;
+    border-radius: 6px;
+    transform-origin: right;
+    transform: scale(0);
+}
+header{
+    background-color: #77ffc0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    box-shadow: -3.5px 6px 10px black;
+    
+}
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #201b2c;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 40px;
+}
+
+.navigation a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    background: #201b2c;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scale(0);
+    transition: transform .7s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scale(1);
+}
+
+.navigation .btnlogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #201b2c;
+    color: #201b2c;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    margin-right: 40px;
+    transition: .5s; 
+}
+
+.navigation .btnlogin-popup:hover{
+    background: #201b2c;
+    color: #77ffc0;
+}
+
+.images{
+    width: 100%;
+    display: block;
+}
+.secret{
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    color: #77ffc0;
+    margin-top: 40px;
+}
