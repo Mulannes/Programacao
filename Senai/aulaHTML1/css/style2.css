@@ -17,14 +17,6 @@ body{
     min-height: 800px;
 }
 
-.pointer{
-    cursor: pointer;
-    justify-content: center;
-    display: flex;
-    color: #77ffc0;
-    margin-top: 40px;
-}
-
 .secret{
     position: relative;
     font-size: 1.1em;
@@ -108,13 +100,23 @@ header{
 }
 
 .images{
-    width: 100%;
-    display: block;
-}
-.secret{
-    cursor: pointer;
-    justify-content: center;
     display: flex;
-    color: #77ffc0;
-    margin-top: 40px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.images img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    left: 50%;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    border-radius: 250px;
 }
