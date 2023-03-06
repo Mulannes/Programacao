@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula4
+    </title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            border:0 ;
+            box-sizing: border-box;
+            font-family: "Poppins";
+        }
+        body{
+            background-color: #201b2c;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        .table1, .table2{
+            /* border-collapse: collapse; */
+            width: 500px;
+            height: 200px;
+            background-color: #77ffc0;
+            box-shadow: 10px 10px 10px black;
+        }
+        th{
+            background-color: #201b2c;
+            font-weight: 800;
+            font-size: 1.5em;
+            color: #77ffc0;
+            width: 250px;
+            padding: 0;
+            text-align: center;
+        }
+
+        td{
+            height: 100%;
+            padding: 5px;
+            text-align: center;
+            border: 1px solid #201b2c;
+            border-radius: 5px;
+            transition: .2s;
+        }
+
+         td:hover{
+            transform: scale(1.15);
+            color: #77ffc0;
+            background-color: #201b2c; 
+            border: 1px solid #77ffc0;
+        } 
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 10vh;
+        }
+        
+        .btn-ale{
+            width: 500px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            color: #201b2c;
+            background-color: #77ffc0;
+            border-radius: 10px;
+            border: 1px solid #ffffff;
+            box-shadow: 10px 10px 10px black;
+            transition: 0.5s;
+        }
+        .btn-ale:hover{
+            background-color: #201b2c;
+            color: #77ffc0;     
+            transform: scale(1.05);
+            cursor: pointer;
+            font-family: "Poppins";
+        }
+    </style>
+    <div class="container">
+        <table class="table1">
+            <tr>
+                <th colspan="3">Tabela</th>
+            </tr>
+            <tr>
+                <th>Pais</th>
+                <th>Estado</th>
+                <th>Capital</th>
+            </tr>
+            <tr>
+                <td rowspan="5">Brasil</td>
+                <td>Santa Catarina</td>
+                <td>Florianópolis</td>
+            </tr>
+            <tr>
+                
+                <td>Paraná</td>
+                <td>Curitiba</td>
+            </tr>
+            <tr>
+                
+                <td>São Paulo</td>
+                <td>São Paulo</td>
+            </tr>
+            <tr>
+               
+                <td>Rio de Janeiro</td>
+                <td>Rio de Janeiro</td>
+            </tr>
+            <tr>
+                
+                <td>Minas Gerais</td>
+                <td>Belo Horizonte</td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <table class="table2">
+            <tr>
+                <th colspan="3">Tabela</th>
+            </tr>
+            <tr>
+                <th>Pais</th>
+                <th>Estado</th>
+                <th>Capital</th>
+            </tr>
+            <tr>
+                <td rowspan="5">EUA</td>
+                <td>Washington</td>
+                <td>Washington D.C</td>
+            </tr>
+            <tr>
+                
+                <td>Califórnia</td>
+                <td>Sacramento</td>
+            </tr>
+            <tr>
+                
+                <td>Texas</td>
+                <td>Austin</td>
+            </tr>
+            <tr>
+                
+                <td>Michigan</td>
+                <td>Lansing</td>
+            </tr>
+            <tr>
+              
+                <td>Nova York</td>
+                <td>Nova York</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
