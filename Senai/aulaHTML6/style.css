@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto-Sans","Poppins", sans-serif;
+}
+
+body{
+    /* display: flex;
+    text-align: center; */
+    /* background: url("./assets/wallpapersden.com_k-beautiful-landscape-digital-art_1360x768.jpg")no-repeat; */
+    background-color: black;
+    /* background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center; */
+}   
+
+/* .wrapper{
+     backdrop-filter: blur(20px); 
+    width: 500px;
+    height: 600px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+     border: 2px solid white; 
+} */
+
+form, input, select, textarea{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+div.wrapper{
+    margin: 0 auto;
+    width: 500px;
+    background-color: #222222;
+    top: 50px;
+    border: 1px solid #262626;
+}
+div.wrapper label{
+    width: 100%;
+    display: block;
+    background-color: #1c1c1c;
+    border-top: 1px solid #262626;
+    border-bottom: 1px solid #161712;
+    padding: 10px 0 10px 0;
+}
