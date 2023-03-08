@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1 class="logo">Logo</h1>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="btnlogin-popup">Login</button>
+        </nav>
+    </header>
         <div class="wrapper">
             <div class="form-box login">
                 <h2>Formulário</h2>
@@ -32,16 +42,43 @@
                         <input type="text" required>
                         <label>Cidade</label>
                     </div>
-                    
-                    <label>UF:
-                        <select name="" id="">
-                            <option value="PR">PR</option>
-                            <option value="SC" selected>SC</option>
-                            <option value="RS">RS</option>
+                    <div class="uf">
+                    <label for="uf">UF: <br>
+                        <select name="uf" id="uf">
+                            <option value="PR">Paraná</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="RS">Rio Grande do Sul</option>
                         </select>
+                        <br>
                     </label>
+                    </div>
+                    <div class="ref">
+                    <label for="ref">Referência:<br>
+                        <textarea placeholder="Digite aqui sua referência" maxlength="120" name="ref" id="ref" cols="30" rows="5"></textarea>
+                    </label>
+                    </div>
+                    <div class="cards">
+                    <label for="">
+                        Selecione a bandeira do cartão <br>
+                        <input type="radio" name="Cartao" class="cartao">Mastercard
+                        <input type="radio" name="Cartao" class="cartao">Visa
+                        <input type="radio" name="Cartao" class="cartao">Ourocard
+                    </label>
+                    </div>
+                    <div class="termo">
+                    <label for="">
+                    Termo de uso: <br>
+                    <input type="checkbox" name="termo" id="">Li e aceito todos os termos de uso. <br>
+                    <input type="checkbox" name="receber-email" id="" checked>Aceito receber novidades e promoções por e-mail. <br>
+                    </label>
+                </div>
+                <label for="">
+                    <input type="submit" value="Enviar" name="enviar">
+                    <input type="reset" value="Reset" name="reset">
+                </label>
                 </form>
             </div>
+            
         </div>
 </body>
 </html>
