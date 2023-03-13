@@ -11,7 +11,8 @@ body{
     /* display: flex;
     text-align: center; */
     /* background: url("./assets/wallpapersden.com_k-beautiful-landscape-digital-art_1360x768.jpg")no-repeat; */
-    background-color: black;
+    background-color: #161712;
+    font: 100% normal Arial;
     /* background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -33,19 +34,86 @@ form, input, select, textarea{
     margin: 0;
     padding: 0;
     color: #fff;
+    display: flex;
 }
+
 div.wrapper{
     margin: 0 auto;
     width: 500px;
-    background-color: #222222;
+    background-color: #176ca6;
     top: 50px;
     border: 1px solid #262626;
+    border-top: 15px solid #fff;
+    border-left: 10px solid #fff;
+    border-bottom: 15px solid #fff;
+    border-right: 10px solid #fff;
 }
 div.wrapper label{
     width: 100%;
     display: block;
-    background-color: #1c1c1c;
+    background-color: #176ca6;
     border-top: 1px solid #262626;
     border-bottom: 1px solid #161712;
     padding: 10px 0 10px 0;
+}
+
+div.wrapper h1{
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px 0 5px 5px;
+    border-bottom: 1px solid #161712;
+    border-top: 1px solid #161712;
+}
+
+div.wrapper .input_text{
+    padding: 1px 10px;
+    width: 200px;
+    background-color: #262626;
+    border-bottom: 1px double #171717;
+    border-top: 1px double #171717;
+    border-left: 1px double #333;
+    border-right: 1px double #333;
+}
+
+div.wrapper .Mensagem{
+    background-color: #262626;
+    border-bottom: 1px double #171717;
+    border-top: 1px double #171717;
+    border-left: 1px double #333;
+    border-right: 1px double #333;
+    padding: 7px 7px;
+    width: 350px;
+    height: 150px;
+    overflow: hidden;
+}
+
+div.wrapper .button{
+    margin: 0 0 10px 0;
+    padding: 3px 7px;
+    background: red;
+    border: 0px;
+    position: relative;
+    top: 10px;
+    left: 360px;
+    width: 100px;
+    border-bottom: 1px double #660000;
+    border-top: 1px double #660000;
+    border-left: 1px double #ff0033;
+    border-right: 1px double #ff0033;
+    justify-content: center;
+}
+
+.button:active{
+    transform: scale(1.10);
+}
+
+div.wrapper label span{
+    color: #bbb;
+    font-size: 12px;
+    width: 120px;
+    padding: 5px 20px 0 0;
+    display: block;
+    text-align: right;
+    float: left;
 }
