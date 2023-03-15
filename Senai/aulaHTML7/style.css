@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: "Noto Sans";
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+header{
+    background-color: #665;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+section{
+    display: flex;
+}
+
+nav{
+    background: #ccc;
+    padding: 20px;
+    width: 20%;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+article{
+    background-color: #f1f1f1;
+    padding: 10px;
+    width: 80%;
+}
+
+footer{
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
