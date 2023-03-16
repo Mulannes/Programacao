@@ -1,0 +1,30 @@
+body{
+    background-color: black ;
+}
+
+.wrapper-box1{
+    background-color: black;
+    display: flex;
+    width: 350px;
+    height: 100px;
+}
+
+.box1{
+    width: 100px;
+    height: 75px;
+    color: black;
+    background-color: white;
+}
+
+.div-1{
+    width: 25px;
+    height: 75px;
+    color: green;
+}
+
+.div-2{
+    width: 25px;
+    height: 75px;
+    background-color: white;
+    display: block;
+}
