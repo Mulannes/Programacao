@@ -1,0 +1,54 @@
+.wrapper{
+    background-color: blue;
+    width: 750px;
+    height: 700px;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabeçalho{
+    background-color: yellow;
+    width: 90%;
+    height: 150px;
+    margin-top: 30px;
+}
+
+.pai_quadrado{
+    display: flex;
+    width: 90%;
+    height: 44%;
+    justify-content: space-between;
+}
+
+.cube{
+    background-color: yellow;
+    width: 45%;
+    height: 100%;
+}
+
+.rodape{
+    background-color: yellow;
+    width: 90%;
+    height: 44%;
+    margin-top: 50px;
+}
+
+.lateral{
+    background-color: yellow;
+    height: 100%;
+    width: 30%;
+}
+
+.pai_2{
+    display: flex;
+    margin-top: 50px;
+    height: 400px;
+    width: 90%;
+}
+
+.pai_1{
+    width: 75%;
+    height: 100%;
+}
