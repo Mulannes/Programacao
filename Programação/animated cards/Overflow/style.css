@@ -21,6 +21,7 @@ body{
     position: relative;
     transition: .5s;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .card{
@@ -32,6 +33,7 @@ body{
     width: 300px;
     height: 400px;
     object-fit: cover;
+    transition: .5s ease;
 }
 
 .text{
@@ -39,8 +41,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    opacity: .8;
-    background: lightblue;
+    background: rgb(173, 216, 230,.6);
     width: 300px;
     height: 400px;
     display: flex;
@@ -57,4 +58,8 @@ body{
 
 .container:hover .text{
     visibility: visible;
+}
+
+.container:hover img{
+    transform: scale(1.1);
 }
