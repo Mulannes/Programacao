@@ -19,6 +19,8 @@ body{
 
 .container{
     position: relative;
+    transition: .5s;
+    cursor: pointer;
 }
 
 .card{
@@ -45,9 +47,14 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: white;
+    color: #fff;
+    visibility: hidden;
 }
 
 .text > h3{
     margin-bottom: 1.2rem;
+}
+
+.container:hover .text{
+    visibility: visible;
 }
