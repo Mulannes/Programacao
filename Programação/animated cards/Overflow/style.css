@@ -19,6 +19,9 @@ body{
 
 .container{
     position: relative;
+    transition: .5s;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .card{
@@ -30,6 +33,7 @@ body{
     width: 300px;
     height: 400px;
     object-fit: cover;
+    transition: .5s ease;
 }
 
 .text{
@@ -37,17 +41,25 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    opacity: .8;
-    background: lightblue;
+    background: rgb(173, 216, 230,.6);
     width: 300px;
     height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: white;
+    color: #fff;
+    visibility: hidden;
 }
 
 .text > h3{
     margin-bottom: 1.2rem;
+}
+
+.container:hover .text{
+    visibility: visible;
+}
+
+.container:hover img{
+    transform: scale(1.1);
 }
