@@ -17,14 +17,17 @@
         }
 
         var callbackSucesso = function(titulo, descricao){
-            document.write
+            document.write("<h1>" + titulo + "</h1>")
+            document.write("<hr>")
+            document.write("<p>" + descricao + "</p>")
         }
 
         var callbackErro = function(){
-
+            document.write("<p><b>Erro: </b>"+ erro + "</p>")
         }
 
         exibirArtigo(1, callbackSucesso, callbackErro)
+    
     </script>
 </head>
 <body>
