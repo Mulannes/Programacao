@@ -27,7 +27,7 @@ img{
     position: absolute;
     background: rgb(27, 27, 27,.5);
     color: #fff;
-    bottom: 188px;
+    bottom: 10%;
     transition: .5s;
 }
 
@@ -80,7 +80,7 @@ img{
 
 .card:hover .intro{
     height: 200px;
-    bottom: 188px;
+    bottom: 10%;
     background: black;
 }
 
