@@ -64,7 +64,7 @@ body{
 }
 
 .intro{
-    display: inline flex;
+    display: inline flex; /*Display inline-flex está sendo usado aqui */
     position: relative;
     z-index: 3;
     color: #fff;
