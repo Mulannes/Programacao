@@ -25,9 +25,9 @@ img{
     padding: 6px;
     box-sizing: border-box;
     position: absolute;
+    bottom: 0;
     background: rgb(27, 27, 27,.5);
     color: #fff;
-    bottom: 10%;
     transition: .5s;
 }
 
@@ -41,6 +41,7 @@ img{
     margin: 50px;
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
+    position: relative;
 }
 
 /* .card-background{
@@ -80,7 +81,7 @@ img{
 
 .card:hover .intro{
     height: 200px;
-    bottom: 10%;
+    bottom: 0;
     background: black;
 }
 
