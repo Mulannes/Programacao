@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Att2</title>
+</head>
+
+<body>
+    <script>
+        var escolha = prompt("Digite + para soma, - para subtração, * para multiplicação e / para divisão");
+        var num1 = prompt("Digite um número");
+        var num2 = prompt("Digite outro um número");
+        var num1 = Number(num1);
+        var num2 = Number(num2);
+        var resultado;
+        if (escolha === "+") {
+            resultado = num1 + num2;
+            document.write("A soma de " + num1 + " mais " + num2 + " é de " + resultado);
+        } else if (escolha === "-") {
+            resultado = num1 - num2;
+            document.write("A subtração de " + num1 + " com " + num2 + " é de " + resultado);
+        } else if (escolha === "*") {
+            resultado = num1 * num2;
+            document.write("A multiplicação de " + num1 + " com " + num2 + " é de " + resultado);
+        } else if (escolha === "/") {
+            resultado = num1 / num2;
+            document.write("A divisão de " + num1 + " com " + num2 + " é de " + resultado);
+        } else {
+            document.write("Sua operação escolhida não é uma opção");
+        }
+    </script>
+</body>
+
+</html>
