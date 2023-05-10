@@ -10,12 +10,23 @@
 
 <body>
     <script>
-        var escolha = prompt("Digite + para soma, - para subtração, * para multiplicação e / para divisão");
-        var num1 = prompt("Digite um número");
-        var num2 = prompt("Digite outro um número");
-        var num1 = Number(num1);
-        var num2 = Number(num2);
+        var escolha; 
+        var num1;
+        var num2;
         var resultado;
+            do{
+                num1 = parseFloat(prompt("Digite um número"));
+            }while(isNaN(num1));
+            
+            do{
+                num2 = parseFloat(prompt("Digite outro número"));
+            }while(isNaN(num2));
+
+            do{
+                escolha = prompt("Digite + para soma, - para subtração, * para multiplicação e / para divisão");
+                console.log("eu")
+            }while(escolha != "+" && escolha != "-" && escolha != "*" && escolha != "/");
+
         if (escolha === "+") {
             resultado = num1 + num2;
             document.write("A soma de " + num1 + " mais " + num2 + " é de " + resultado);
