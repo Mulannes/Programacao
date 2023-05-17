@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aulaJS5</title>
+    <style>
+        /* body{
+            background-color: #201b2c;
+        }
+        div{
+            width: 50px;
+            height: 50px;
+            background-color: #201b2c;
+        }
+        .container{
+            display: flex;
+            width: auto;
+            height: auto;
+        }
+        p{
+            color: white;
+        } */
+        .conteudo h2 span{
+            font-size: 13px;
+            cursor: pointer;
+        }
+        .conteudo p{
+            height: 10px;
+            overflow: hidden;
+        }
+        .mostrar{
+            height: 200px !important;
+        }
+    </style>
+</head>
+<body>
+    <!--getElementById-->
+    <!--getElementsByTagName-->
+    <!--getElementsByClassName-->
+    <!--querySelector-->
+    <!-- <button id="clk" onclick="clicar()">Clique aqui</button>
+    <button>Clique aqui</button>
+    <p>Olá wordle!</p>
+    <div class="container">
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+    </div>
+    <div class="container">
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+    </div>
+    <div class="container">
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+    </div>
+    <div class="container">
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+    </div>
+    <div class="container">
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+    </div>
+    <div class="container">
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+    </div>
+    <div class="container">
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+    </div>
+    <div class="container">
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+    </div>
+    <div class="container">
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+    </div>
+    <div class="container">
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+    </div>
+    <div class="container">
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+    </div>
+    <div class="container">
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+    </div>
+    <div class="container">
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+    </div>
+    <div class="container">
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+    </div>
+    <div class="container">
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+        <div onmouseout="changecolor(this, '#77ffc0')" onmouseover="changecolor(this,'white')">
+        </div>
+    </div> -->
+    <div class="conteudo">
+        <h2>JavaScript <span>Ver mais!</span></h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium suscipit natus. Consectetur ut ipsa nemo accusantium, animi illum sapiente vel totam inventore labore dolorum facere illo, veniam, sunt tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet porro at, consequatur qui, natus officiis non alias voluptatibus eligendi ipsam totam nostrum veritatis fugiat nihil tempore? Distinctio, dolore voluptatum libero dolorem, quasi sed vitae tempore provident amet porro voluptatibus expedita culpa, accusamus illo eligendi commodi quas consectetur enim dignissimos mollitia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium suscipit natus. Consectetur ut ipsa nemo accusantium, animi illum sapiente vel totam inventore labore dolorum facere illo, veniam, sunt tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet porro at, consequatur qui, natus officiis non alias voluptatibus eligendi ipsam totam nostrum veritatis fugiat nihil tempore? Distinctio, dolore voluptatum libero dolorem, quasi sed vitae tempore provident amet porro voluptatibus expedita culpa, accusamus illo eligendi commodi quas consectetur enim dignissimos mollitia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium suscipit natus. Consectetur ut ipsa nemo accusantium, animi illum sapiente vel totam inventore labore dolorum facere illo, veniam, sunt tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet porro at, consequatur qui, natus officiis non alias voluptatibus eligendi ipsam totam nostrum veritatis fugiat nihil tempore? Distinctio, dolore voluptatum libero dolorem, quasi sed vitae tempore provident amet porro voluptatibus expedita culpa, accusamus illo eligendi commodi quas consectetur enim dignissimos mollitia.
+        </p>
+    </div>
+    
+    <div>
+        <h2>Outro título</h2>
+    </div>
+    
+
+    <script>
+        var span = document.querySelector(".conteudo span");
+        console.log(span)
+        span.addEventListener('click', function(){
+            var conteudo = document.querySelector('.conteudo p');
+
+            if (conteudo.classList.contains("mostrar")){
+                span.innerHTML = 'Ver mais!';
+                conteudo.classList.remove("mostrar");
+            }else{
+                span.innerHTML = "Ocultar";
+                conteudo.classList.add("mostrar");
+            }
+        })
+        // var paragrafo = document.getElementsByTagName("p")[0];
+        // for(var i=0; i < 10; i++){
+        // paragrafo.innerHTML = paragrafo.innerHTML+" Tudo Bem?";
+        // }
+        
+        // function clicar(){
+        //     document.write("Clique reconhecido")
+        // }
+        // function changecolor(elemento, color){
+        //     elemento.style.backgroundColor = color;
+        //     elemento.innerHTML = "(ˉ﹃ˉ)"
+        // }
+        // var ostra = document.getElementsByTagName("button")[0];
+        // ostra.addEventListener("click", function(){
+        //     document.write("Paulo Guedes.");
+        // });
+    </script>
+</body>
+</html>
