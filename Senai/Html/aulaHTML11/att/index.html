@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade PopUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav-button">
+        <button class="button">Click here</button>
+    </div>
+    <a onmouseover="openPopup1()">Abrir ao passar o mouse</a>
+
+    <div class="popup-wrapper1">
+        <div class="popup1" onmouseleave="closePopup1()">
+            <div class="popup-content1">
+                <h2>Popup</h2>
+                <p>Texto para o seu popup!</p>
+                <a href="#" class="popup-link1">Fechar</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup-wrapper">
+        <div class="popup">
+            <div class="popup-close" onclick="popupClose()">x</div>
+            <div class="popup-content">
+                <h2>Popup</h2>
+                <p>Texto para o seu popup!</p>
+                <div class="trapdoor">
+                    <div class="top door">
+                    </div>
+                    <div class="bottom door">
+                    </div>
+                    <a href="https://twitter.com/mulannes1" class="twitter-follow-button" data-show-count="false"
+                        data-size="large" data-dnt="false">Follow @twholman</a>
+                    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+                </div>
+                <a href="#" class="popup-link">Fechar</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const button = document.querySelector("button")
+        const popup = document.querySelector(".popup-wrapper1")
+        const popup1 = document.querySelector(".popup-wrapper")
+
+        button.addEventListener("click", () => {
+            popup1.style.display = "block"
+        })
+
+        function popupClose() {
+            popup1.style.display = "none"
+        }
+
+
+        function openPopup1() {
+            popup.style.display = "block"
+        }
+
+        function closePopup1() {
+            popup.style.display = "none"
+        }
+    </script>
+</body>
+
+</html>

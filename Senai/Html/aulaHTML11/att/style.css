@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", "noto-sans", sans-serif;
+}
+
+.nav-button {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    overflow: hidden;
+    border: 2px solid currentColor;
+    border-radius: 3rem;
+    color: black;
+    font-family: roboto;
+    font-size: 4rem;
+    font-weight: 100;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    position: relative;
+    text-decoration: none;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+}
+
+.button::after {
+    background-color: black;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+.button:hover::after {
+    transform: translate(0, 0);
+}
+
+.button:hover {
+    border: 2px solid transparent;
+    color: #fff;
+    transform: scale(1.05);
+    will-change: transform;
+}
+
+.popup-wrapper1 {
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    cursor: pointer;
+}
+
+.popup1 {
+    position: relative;
+    text-align: center;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: white;
+    width: 300px;
+    height: 250px;
+}
+
+.popup1 a {
+    background-color: gainsboro;
+    color: black;
+    text-decoration: none;
+    padding: 6px 10px;
+}
+
+.popup-content1 {}
+
+.popup-link1 {
+    position: relative;
+    top: 25px;
+}
+
+.popup-wrapper {
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.popup {
+    position: relative;
+    text-align: center;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: white;
+    width: 300px;
+    height: 250px;
+}
+
+.popup a {
+    background-color: gainsboro;
+    color: black;
+    text-decoration: none;
+    padding: 6px 10px;
+}
+
+.popup-close {
+    position: absolute;
+    color: white;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    padding: 1px 9px;
+    background: linear-gradient(blue 0 0) var(--p, 0)/var(--p, 0) no-repeat;
+    transition: .4s, background-position 0s;
+    background-color: red;
+}
+
+.popup-close:hover {
+    --p: 100%;
+    color: #fff;
+}
+
+.popup-content {}
+
+.popup-link {
+    position: relative;
+    top: 25px;
+}
+
+@import "compass/css3";
+
+.trapdoor {
+    --webkit-transform: translateZ(0px);
+    --webkit-font-smoothing: antialiased;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 50px;
+    box-shadow: inset -7px 0px 12px -8px rgba(0, 0, 0, 0.3), inset 7px 0px 12px -8px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+    --webkit-transition: background 400ms ease-in-out;
+    --moz-transition: background 400ms ease-in-out;
+    --ms-transition: background 400ms ease-in-out;
+    --o-transition: background 400ms ease-in-out;
+    transition: background 400ms ease-in-out;
+
+    &:hover {
+        background: #fff;
+
+        .door {
+            box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.4);
+            --webkit-transform: scale(1.08);
+            --moz-transform: scale(1.08);
+            --ms-transform: scale(1.08);
+            --o-transform: scale(1.08);
+            transform: scale(1.08);
+        }
+
+        .top {
+            top: -50%;
+        }
+
+        .bottom {
+            top: 100%;
+        }
+    }
+
+    .twitter-follow-button {
+        margin-left: -77px;
+        position: absolute !important;
+        margin-top: -14px;
+        left: 50%;
+        top: 50%;
+    }
+}
+
+.top {
+    top: 0%;
+    left: 0px;
+
+    &:before {
+        top: 5px;
+    }
+}
+
+.bottom {
+    top: 50%;
+    left: 0px;
+
+    &:before {
+        top: -20px;
+    }
+}
+
+.door {
+    --webkit-transition: top 400ms, box-shadow 200ms, --webkit-transform 300ms;
+    --moz-transition: top 400ms, box-shadow 200ms, --moz-transform 300ms;
+    --ms-transition: top 400ms, box-shadow 200ms, --ms-transform 300ms;
+    --o-transition: top 400ms, box-shadow 200ms, --o-transform 300ms;
+    transition: top 400ms, box-shadow 200ms, transform 300ms;
+    --webkit-transition-timing-function: ease-in-out;
+    --moz-transition-timing-function: ease-in-out;
+    --ms-transition-timing-function: ease-in-out;
+    --o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    background-color: #fff;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    z-index: 2;
+    height: 50%;
+
+    &:before {
+        font-family: 'tweet', sans-serif;
+        position: absolute;
+        margin-left: -20px;
+        font-size: 35px;
+        display: block;
+        color: #4099FF;
+        content: "\e000";
+        width: 0px;
+        height: 20px;
+        left: 52%;
+    }
+}
