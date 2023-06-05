@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrosel</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
         body {
             background-color: #1C403C;
+            font-family: "Poppins", 'noto-sans', sans-serif;
         }
 
         .myslide {
@@ -107,7 +110,7 @@
 
         function autoSlide() {
             ctrImg(1);
-            setTimeout(autoSlide, 10000);
+            setTimeout(autoSlide, 5000);
         }
 
         autoSlide();
