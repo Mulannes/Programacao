@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrosel</title>
+    <style>
+        body {
+            background-color: #1C403C;
+        }
+
+        .myslide {
+            display: none;
+            width: 500px;
+            height: 300px;
+            margin: auto;
+
+        }
+
+        #title {
+            text-align: center;
+            color: #B4D9CE;
+        }
+
+        .slide {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            margin: auto;
+            background-color: rgb(73, 166, 139, 0.5);
+            border: 5px solid #B4D9CE;
+        }
+
+        .left,
+        .right {
+            position: absolute;
+            top: 50%;
+            transform: translate(0%, -50%);
+            background-color: rgb(28, 64, 60, 0.3);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 100%;
+        }
+
+        .left {
+            left: 0;
+            transform: translate(0%, -50%);
+        }
+
+        .right {
+            right: 0;
+        }
+
+        .center {
+            text-align: center;
+            color: #B4D9CE;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="title">Titulo slide</h2>
+
+    <div class="slide">
+        <img src="./images/foto-um-respingo-de-sonho-paisagem-rgb-cores-vivas-hiper_823696-68.avif" alt="img"
+            class="myslide">
+        <div class="myslide">
+            <div class="center">
+                <h2>NEW!</h2>
+                <p>Bolas na promoção</p>
+                <p>Apenas R$39,90</p>
+            </div>
+        </div>
+        <img src="./images/os-respingos-e-respingos-vividos-e-vivos-de-tinta-colorida-criam-uma-composicao-dinamica-e-energica-que-e-bela-e-cativante-gerada-por-ia_579956-4144.avif"
+            alt="" class="myslide">
+        <img src="./images/respingo-colorido-abstrato-3d-background-generativo-ai-background_60438-2509.avif" alt=""
+            class="myslide">
+        <button onclick="ctrImg(-1)" class="left">&#10094;</button>
+        <button onclick="ctrImg(1)" class="right">&#10095;</button>
+    </div>
+
+    <script>
+        var indiceSlide = 1;
+        showSlide(indiceSlide)
+
+        function ctrImg(n) {
+            showSlide(indiceSlide += n)
+        }
+
+        function showSlide(n) {
+            var i;
+            var x = document.getElementsByClassName("myslide");
+            if (n > x.length) {
+                indiceSlide = 1;
+            }
+            if (n < 1) {
+                indiceSlide = x.length;
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none"
+            }
+            x[indiceSlide - 1].style.display = "block";
+        }
+
+        function autoSlide() {
+            ctrImg(1);
+            setTimeout(autoSlide, 10000);
+        }
+
+        autoSlide();
+    </script>
+</body>
+
+</html>
