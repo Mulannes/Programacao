@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+la resultado is on the console please aperte f12. c:
+
+<body>
+    <script>
+        // const pessoa = {
+        //     nome: 'Legolas',
+        //     sobrenome: 'Holimion ',
+        //     altura: 1.92,
+        //     idade: 30,
+        // }
+
+        // console.log(pessoa.nome, pessoa.sobrenome, pessoa.idade)
+        // console.log(pessoa["nome"])
+
+        // pessoa.peso = 80 + "kg";
+        // console.log(pessoa.nome, pessoa.sobrenome, pessoa.idade, pessoa.peso)
+        // console.log(pessoa["nome"])
+
+        // console.log(Object.keys(pessoa))
+
+        // const animal = {
+        //     Reino: 'Animalia',
+        //     Filo: 'Chordata',
+        //     Classe: 'Mammalia',
+        //     Ordem: 'Cetacea',
+        //     Subordem: 'Odontoceti',
+        //     nome: "Golfinho",
+        //     nome_cientifico: "Delphinus delphis",
+        //     especie: "Golfinho_comum_de_bico_curto",
+        //     genero: "feminino",
+        //     peso: 120 + "kg",
+        //     sons() { return ("assovio e estalos") }
+        // }
+
+        // console.log(animal.nome);
+        // console.log(animal.genero);
+        // console.log(animal.Classe);
+        // console.log(animal["sons"]())
+
+        const carro = {
+            marca: "BMW",
+            modelo: "M4",
+            ano: 2023,
+            ligar: function () {
+                console.log("O carro está ligando. Vrum, Vrum")
+            },
+            desligar: function () {
+                console.log('O carro está desligando!😒👌')
+            }
+        }
+
+        var resultado = prompt("Do you want to turn on the car?(y or n)")
+
+        if (resultado === "y") {
+            carro.ligar();
+            let desligar = prompt("The car is on, do you want to turn it off?(y or n)")
+            if (desligar === "y") {
+                carro.desligar()
+            } else if (desligar === "n") {
+                console.log("The car now is always on, now good luck for YOU.")
+            } else {
+                console.log('Escreve certo pfv fdp')
+            }
+        } else {
+            console.log('Escreve certo pfv fdp')
+        }
+        console.log("Aperte F5 e tente again ")
+    </script>
+</body>
+
+</html>
