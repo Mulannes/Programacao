@@ -1,10 +1,10 @@
 class Header extends HTMLElement {
     constructor() {
-      super();
+        super();
     }
-  
+
     connectedCallback() {
-      this.innerHTML = `
+        this.innerHTML = `
       <style>
       .wrapper {
         width: 100%;
@@ -147,6 +147,6 @@ class Header extends HTMLElement {
             </div>
       `;
     }
-  }
-  
-  customElements.define("teste-2", Header);
+}
+
+customElements.define("teste-2", Header);
